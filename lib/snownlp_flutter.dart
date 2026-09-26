@@ -31,7 +31,7 @@ export 'src/utils/asset_loader_flutter.dart' show FlutterAssetLoader;
 /// that, all `await SnowNLP(...)`, `await seg(...)`, `await tag(...)`,
 /// `await zh2hans(...)`, `await getPinyin(...)` calls read from the
 /// Flutter asset bundle with the key
-/// `packages/snownlp/src/data/$name`.
+/// `packages/snownlp/lib/src/data/$name`.
 void useFlutterAssetLoader() {
   SnowConfig.instance.assetLoader = FlutterAssetLoader();
 }

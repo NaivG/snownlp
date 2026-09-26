@@ -6,7 +6,7 @@ import 'asset_loader.dart';
 ///
 /// This is the loader Flutter apps register via
 /// `package:snownlp/snownlp_flutter.dart`. It reads from the bundled
-/// `packages/snownlp/src/data/$name` asset (the asset key Flutter
+/// `packages/snownlp/lib/src/data/$name` asset (the asset key Flutter
 /// assigns to a file declared in the package's own `flutter.assets`
 /// list).
 ///
@@ -21,9 +21,9 @@ class FlutterAssetLoader implements AssetLoader {
   /// Flutter assigns to this package's `lib/src/data/` assets.
   FlutterAssetLoader({this.assetPrefix = defaultAssetPrefix});
 
-  /// `packages/snownlp/src/data/` — the asset key Flutter derives for
+  /// `packages/snownlp/lib/src/data/` — the asset key Flutter derives for
   /// files declared under the package's `lib/src/data/` directory.
-  static const String defaultAssetPrefix = 'packages/snownlp/src/data/';
+  static const String defaultAssetPrefix = 'packages/snownlp/lib/src/data/';
 
   /// Override of [defaultAssetPrefix]; useful for forks or vendored
   /// copies of the package that ship under a different name.

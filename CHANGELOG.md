@@ -5,7 +5,7 @@
 - **First-class Flutter assets support.** Added
   `pubspec.yaml`'s `flutter.assets: lib/src/data/` block so a
   consuming Flutter app bundles the seven model `.bin` files
-  automatically under `packages/snownlp/src/data/`. New
+  automatically under `packages/snownlp/lib/src/data/`. New
   `lib/src/utils/asset_loader.dart` introduces an `AssetLoader`
   strategy:
   - `IoAssetLoader` (default, in `asset_loader_io.dart`) resolves

@@ -85,7 +85,7 @@ The package declares its own `lib/src/data/*.bin` files in
 `pubspec.yaml`'s `flutter.assets` block, so a consuming Flutter app
 **does not need to redeclare the assets** — they are bundled
 automatically under the key
-`packages/snownlp/src/data/<filename>`.
+`packages/snownlp/lib/src/data/<filename>`.
 
 To switch from the default file-system loader to the asset-bundle
 loader, add one import and one call in `main()`:
@@ -170,7 +170,7 @@ implementations:
 * **`FlutterAssetLoader`** (in
   [`asset_loader_flutter.dart`](lib/src/utils/asset_loader_flutter.dart))
   — loads the same file from the bundled asset image with
-  [`rootBundle.load('packages/snownlp/src/data/$name')`](https://api.flutter.dev/flutter/services/rootBundle.html).
+  [`rootBundle.load('packages/snownlp/lib/src/data/$name')`](https://api.flutter.dev/flutter/services/rootBundle.html).
   Opt-in via `package:snownlp/snownlp_flutter.dart`.
 
 `package:flutter/services.dart` is therefore only ever imported from
